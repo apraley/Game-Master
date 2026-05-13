@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Twin Peaks: Red Room Quest</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Twin Peaks: Red Room Quest</h1>
+    <p class="subtitle">NES-inspired top-down dungeon crawl — Play as Dale Cooper</p>
+
+    <section class="hud">
+      <div>Health: <span id="health">6</span>/6</div>
+      <div>Coffee: <span id="coffee">0</span></div>
+      <div>Pie: <span id="pie">0</span></div>
+      <div>Room: <span id="room">1</span>/5</div>
+      <div>Clues: <span id="clues">0</span></div>
+    </section>
+
+    <canvas id="game" width="512" height="384" aria-label="Game canvas"></canvas>
+
+    <section class="controls">
+      <p><strong>Move:</strong> Arrow Keys / WASD • <strong>Attack:</strong> Space • <strong>Interact:</strong> E</p>
+      <p>References include The Black Lodge, Fire Walk With Me, and The Return.</p>
+    </section>
+
+    <section class="log">
+      <h2>Case Notes</h2>
+      <ul id="messages"></ul>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
